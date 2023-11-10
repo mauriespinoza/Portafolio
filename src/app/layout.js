@@ -1,4 +1,7 @@
 import { Inter } from 'next/font/google'
+import { Providers } from '../providers';
+import { NavbarNJS } from '@/app/components/Navbar';
+import { NextUIProvider } from '@nextui-org/react';
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -11,7 +14,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta charSet="utf-8" />
+        {/* <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        /> */}
+      </head>
+      <body className={inter.className}>
+      <Providers>
+        
+      <NavbarNJS/>
+        {children}
+        </Providers>
+      </body>
     </html>
   )
 }
