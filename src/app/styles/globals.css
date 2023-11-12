@@ -1,13 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+  --primary-color: rgb(29, 60, 70);
+  --secondary-color: rgb(67, 125, 150);
+
+  --vs-red: rgb(241, 69, 78);
+  --vs-blue: rgb(114, 212, 218);
+  --vs-orange: rgb(196, 141, 40);
+  --vs-comment: rgb(184, 181, 181);
+}
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -31,11 +40,14 @@
 }
 
 body {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: 'Ubuntu', 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #1D1E20;
-  color: #DADADB;
+  /* background-color: #1D1E20; */
+  /* color: #DADADB; */
+  /* background-color: #1D1E20; */
+  background-color: rgb(236, 233, 229);
   /* margin: 0 auto; */
 }
 
@@ -56,19 +68,25 @@ li {
 }
 
 /* Navbar */
-/* .nav-container {
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-  background-color: #1D1E20;
+  padding-left: 30px;
+  padding-top: 10px;
+  height: 300px;
+  /* background-color: #1D1E20; */
+  background-color: #323333;
+  
 }
 
 .nav-container .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
+Link {
+  background-color: #FFCC1A;
+}
 .cta-btn {
   background-color: #FFCC1A;
   color: #1D1E20;
@@ -83,7 +101,7 @@ li {
 
 .cta-btn:hover {
   background-color: #DADADB;
-} */
+}
 
 /* Footer */
 hr {
@@ -259,8 +277,8 @@ hr {
 
 /* Skills */
 .skills-container {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 15%;
+  margin-top: 50px;
 }
 
 .skills-container h2 {
@@ -348,9 +366,12 @@ hr {
 }
 /* Projects */
 .projects-container {
-  padding-left: 30px;
+  /* padding-left: 30px;
   padding-right: 30px;
-   margin-bottom: 30px; 
+   margin-bottom: 30px;  */
+   padding: 0 15%;
+   margin-bottom: 30px;
+   margin-top: 50px;
 }
 
 .projects-container h2 {

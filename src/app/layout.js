@@ -1,8 +1,9 @@
 import { Inter } from 'next/font/google'
-import { Providers } from '../providers';
+import { Providers } from './../providers';
 import { NavbarNJS } from '@/app/components/Navbar';
 import { NextUIProvider } from '@nextui-org/react';
-import './globals.css'
+
+import './styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       <Providers>
         
       <NavbarNJS/>
+      {/* <sideBar /> */}
         {children}
         </Providers>
       </body>

@@ -1,11 +1,15 @@
-import styles from './about.css'
-
+// import styles from './about.css'
+import Image from "next/image";
+import Layout from "./Layout";
+import styles from '../styles/About.module.css';
+import profile from "../../../public/images/yoda.webp";
 export const About = () => {
   return (
-    <div id="aboutId" className="about-container">
+
+    <div id="aboutId" className={styles.aboutcontainer}>
     <h2>Acerca de Mi</h2>
-    <div className="flex-about">
-        <div className="about-text">
+    <div className={styles.flexabout}>
+        <div className={styles.abouttext}>
             <p>
               Como desarrollador, siempre me ha apasionado crear soluciones elegantes y eficaces a problemas complejos. Tengo una base sólida en el desarrollo de software, con enfoque en tecnologías web como HTML, CSS y JavaScript. Disfruto trabajando tanto en el front-end como en el back-end de las aplicaciones y siempre estoy buscando formas de optimizar el rendimiento, mejorar la experiencia del usuario y garantizar el más alto nivel de calidad del código.
             </p>
@@ -13,10 +17,11 @@ export const About = () => {
 
 </p>
         </div>
-        {/* <div className="about-img">
-            <Image src='/images/about.jpeg' className="profile-img" width={300} height={500} alt="Joe and animal relaxing and having fun" />
-        </div> */}
+        <div className={styles.aboutimg}>
+            <Image src='/images/yoda.webp' className={styles.profileimg} width={250} height={250} alt="Mauricio Espinoza mode relaxing" />
+        </div>
     </div>
 </div>
+
   )
 }

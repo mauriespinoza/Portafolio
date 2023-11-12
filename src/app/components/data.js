@@ -1,37 +1,34 @@
 export const projectData = [
 	{
-		id: 1,
+		id: "1",
 		title: 'Todo List App',
 		description:
-			'A simple Todo List App built with JavaScript. All datas are stored in localstorage. It helps users check list out their plans and tick as they do them.',
-		gitHubLink: 'https://github.com/olawanlejoel/Todo-List-App',
+			'Aplicacion de prevision de tiempo utilizando el consumo de la API de Meteosource, para obtener informacion del tiempo de las Localidaes consultadas.',
+		gitHubLink: 'https://github.com/mauriespinoza/AppPrevisionTiempoAPI',
+		Link: 'https://mauriespinoza.github.io/AppPrevisionTiempoAPI/',
 	},
 	{
-		id: 2,
-		title: 'Books Library App',
+		id: "2",
+		title: 'App Restaurant Master Raúl',
 		description:
-			'A simple Book Library App built with JavaScript. It helps readers have a good list of books they are eiter currently reading or have finished reading.',
-		gitHubLink: 'https://github.com/olawanlejoel/Book-Library',
+			'Aplicacion de Restaurante Master Raúl es un aplicación web para realizar busqueda de la Carta en tiempo real, Reserva de mesas, Contactar a sus dueños para consultas, recomendaciones, información de Blog para un Food Truck de comida rápida',
+		gitHubLink: 'https://github.com/mauriespinoza/AppRestaurant',
+		Link:'https://helpful-gumption-17e3bd.netlify.app/',
 	},
 	{
-		id: 3,
-		title: 'Quotes Generator',
+		id: "3",
+		title: 'ECommerce tienda Candelabra',
 		description:
-			'Helps you generates quotes from about 1600 quotes written by different authors . Quotes are automatically copied to your clipboards.',
-		gitHubLink: 'https://github.com/olawanlejoel/random-quote-generator',
+			'Aplicación web de tienda virtual de Articulos Escolares y Oficina. Este sitio web Candelabra es un aplicación de tipo ECommerce que se desarrollo el BackEnd y FrontEnd con Stack MERN',
+		gitHubLink: 'https://github.com/mauriespinoza/AppLibreriaFrontEnd',
+		Link:'https://sage-medovik-daf437.netlify.app/',
 	},
 	{
-		id: 4,
-		title: 'Password Generator',
+		id: "4",
+		title: 'Portafolio',
 		description:
 			'Helps you generates random passwords, you can select what you want your password to entail and also you can copy generated password to clipboard.',
 		gitHubLink: 'https://github.com/olawanlejoel/Password-Generator',
 	},
-	{
-		id: 5,
-		title: 'Twitter UI Clone',
-		description:
-			'Simple Twitter UI clone built with TailwindCSS and Vue Js. This covers only the home page of Twitter UI. This is cool to get started with TailwindCSS as it helps understand basic concepts.',
-		gitHubLink: 'https://github.com/olawanlejoel/TwitterUI-clone',
-	},
+
 ];
